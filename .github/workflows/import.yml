@@ -1,0 +1,37 @@
+name: Import project history
+on:
+  push:
+    branches: [main]
+    paths: ['_import/**']
+permissions:
+  contents: write
+concurrency:
+  group: import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebuild bundle and replay commits
+        run: |
+          set -euo pipefail
+          if [ ! -f _import/MANIFEST.txt ]; then echo "Manifest not uploaded yet"; exit 0; fi
+          want=$(grep '^sha256=' _import/MANIFEST.txt | cut -d= -f2)
+          parts=$(grep -v '^sha256=' _import/MANIFEST.txt)
+          for p in $parts; do
+            if [ ! -f "_import/$p" ]; then echo "Waiting for $p"; exit 0; fi
+          done
+          : > /tmp/repo.bundle
+          for p in $parts; do cat "_import/$p" >> /tmp/repo.bundle; done
+          echo "$want  /tmp/repo.bundle" | sha256sum -c -
+          git bundle verify /tmp/repo.bundle
+          git fetch /tmp/repo.bundle main:refs/imported/main
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r -q _import
+          git commit -q -m "Remove temporary import files"
+          git cherry-pick --allow-empty --keep-redundant-commits $(git rev-list --reverse refs/imported/main)
+          git push origin HEAD:main
