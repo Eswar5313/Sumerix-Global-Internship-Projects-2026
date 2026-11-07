@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_s"
+        android:text="@string/explore_profile"
+        android:textAppearance="@style/TextAppearance.Profile.Eyebrow" />
+
+    <include android:id="@+id/card_about" layout="@layout/item_section_card_about" />
+    <include android:id="@+id/card_skills" layout="@layout/item_section_card_skills" />
+    <include android:id="@+id/card_contact" layout="@layout/item_section_card_contact" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_share"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_s"
+        android:text="@string/share_profile" />
+</LinearLayout>

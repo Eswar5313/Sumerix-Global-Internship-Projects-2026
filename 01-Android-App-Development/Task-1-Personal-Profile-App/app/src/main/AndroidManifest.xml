@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Profile">
+
+        <!-- Launcher: branded splash screen, hands over to the profile after a short delay -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Profile.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.MainActivity" android:exported="false" />
+        <activity android:name=".ui.AboutActivity" android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.SkillsActivity" android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.ContactActivity" android:exported="false"
+            android:parentActivityName=".ui.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

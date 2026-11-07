@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eswar Profile</string>
+
+    <!-- Profile -->
+    <string name="profile_name">Eswar Mahalingam</string>
+    <string name="profile_headline">Team Lead – Hub Operations · Supply Chain &amp; Data Analytics</string>
+    <string name="profile_credentials">MBA (SRM University) · PG Diploma in Logistics &amp; SCM · Six Sigma Black Belt</string>
+    <string name="profile_location">India · Open to PAN-India &amp; international roles</string>
+    <string name="profile_tagline">Operations professional who turns messy floor data into decisions — and leads the team that delivers them.</string>
+    <string name="stat_experience_value">8+ yrs</string>
+    <string name="stat_experience_label">Experience</string>
+    <string name="stat_sales_value">₹13.5Cr+</string>
+    <string name="stat_sales_label">Sales delivered</string>
+    <string name="stat_csat_value">92%</string>
+    <string name="stat_csat_label">Team CSAT</string>
+    <string name="explore_profile">Explore profile</string>
+
+    <!-- Sections -->
+    <string name="section_about">About</string>
+    <string name="section_about_hint">Summary, experience &amp; education</string>
+    <string name="section_skills">Skills</string>
+    <string name="section_skills_hint">Operations, analytics, tech &amp; leadership</string>
+    <string name="section_contact">Contact</string>
+    <string name="section_contact_hint">Email, LinkedIn, GitHub &amp; message form</string>
+    <string name="share_profile">Share profile</string>
+    <string name="share_text">%1$s — Supply Chain, Operations &amp; Data Analytics. Projects: %2$s</string>
+    <string name="toggle_theme">Toggle dark mode</string>
+
+    <!-- About -->
+    <string name="about_summary_title">Summary</string>
+    <string name="about_summary">I have spent 8+ years across logistics, fintech, Dubai real estate and automotive sales — closing deals, running customer-experience teams and analysing operations data. I am now combining that floor experience with analytics and product skills: Excel and Power BI dashboards, SQL and Python analysis, UI/UX research and Android development through the Sumerix Global internship (Oct 2026 – Jul 2027).</string>
+    <string name="about_experience_title">Experience highlights</string>
+    <string name="about_education_title">Education</string>
+    <string name="about_languages_title">Languages</string>
+    <string name="about_languages">English · Hindi · Tamil · Telugu · German (A1, in progress)</string>
+
+    <!-- Skills -->
+    <string name="skills_intro">Self-assessed proficiency, grouped by area.</string>
+    <string name="skills_summary">%1$d skills · average %2$d%% (%3$s)</string>
+    <string name="skill_level_format">%1$d%% · %2$s</string>
+
+    <!-- Contact -->
+    <string name="contact_intro">Open to Senior Manager / AVP roles in operations, supply chain and analytics — India, EU and the Gulf.</string>
+    <string name="contact_email">eswarmba05313@gmail.com</string>
+    <string name="link_linkedin">https://www.linkedin.com/in/eswar-mahalingam</string>
+    <string name="link_github">https://github.com/Eswar5313</string>
+    <string name="action_email">Email</string>
+    <string name="action_linkedin">LinkedIn</string>
+    <string name="action_github">GitHub</string>
+    <string name="contact_form_title">Send a message</string>
+    <string name="hint_name">Your name</string>
+    <string name="hint_email">Your email</string>
+    <string name="hint_message">Message</string>
+    <string name="action_send">Send message</string>
+    <string name="contact_subject">Hello Eswar — message from %1$s</string>
+    <string name="error_required">Required</string>
+    <string name="error_email">Enter a valid email address</string>
+    <string name="error_message">Please write at least 10 characters</string>
+    <string name="error_no_app">No app available to open this link</string>
+    <string name="splash_tagline">Operations · Analytics · Product</string>
+</resources>

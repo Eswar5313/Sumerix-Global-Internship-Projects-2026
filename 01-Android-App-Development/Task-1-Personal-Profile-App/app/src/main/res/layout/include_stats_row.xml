@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_s" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/space_m">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_experience_value" android:textAppearance="?attr/textAppearanceTitleMedium" android:maxLines="1"
+                android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_experience_label" android:textAppearance="?attr/textAppearanceBodySmall" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_s" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/space_m">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_sales_value" android:textAppearance="?attr/textAppearanceTitleMedium" android:maxLines="1"
+                android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_sales_label" android:textAppearance="?attr/textAppearanceBodySmall" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/space_m">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_csat_value" android:textAppearance="?attr/textAppearanceTitleMedium" android:maxLines="1"
+                android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/stat_csat_label" android:textAppearance="?attr/textAppearanceBodySmall" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
