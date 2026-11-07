@@ -1,0 +1,130 @@
+{
+  "color": {
+    "light": {
+      "--primary": "#0A1F44",
+      "--on-primary": "#FFFFFF",
+      "--primary-container": "#DCE4F5",
+      "--on-primary-container": "#0A1F44",
+      "--accent": "#C9A227",
+      "--accent-strong": "#8A6D0B",
+      "--accent-container": "#F6EBC2",
+      "--on-accent-container": "#3A2E00",
+      "--bg": "#F6F7F9",
+      "--surface": "#FFFFFF",
+      "--surface-2": "#EEF1F6",
+      "--text": "#14181F",
+      "--text-2": "#4A5263",
+      "--border": "#D5DAE3",
+      "--success": "#15803D",
+      "--success-bg": "#DCFCE7",
+      "--warning": "#B45309",
+      "--warning-bg": "#FEF3C7",
+      "--error": "#B91C1C",
+      "--error-bg": "#FEE2E2",
+      "--info": "#0369A1",
+      "--info-bg": "#E0F2FE"
+    },
+    "dark": {
+      "--primary": "#B9C8EE",
+      "--on-primary": "#0A1F44",
+      "--primary-container": "#1E3A6E",
+      "--on-primary-container": "#DCE4F5",
+      "--accent": "#E4C24F",
+      "--accent-strong": "#E4C24F",
+      "--accent-container": "#5A4700",
+      "--on-accent-container": "#F6EBC2",
+      "--bg": "#0D1117",
+      "--surface": "#161B24",
+      "--surface-2": "#1F2633",
+      "--text": "#E6E9EF",
+      "--text-2": "#A9B1C1",
+      "--border": "#2C3444",
+      "--success": "#4ADE80",
+      "--success-bg": "#12301F",
+      "--warning": "#FBBF24",
+      "--warning-bg": "#3A2A05",
+      "--error": "#F87171",
+      "--error-bg": "#3B1414",
+      "--info": "#38BDF8",
+      "--info-bg": "#0B2A3D"
+    }
+  },
+  "typography": {
+    "Display": {
+      "font": "Inter 800",
+      "size": 36,
+      "lineHeight": 44,
+      "use": "Splash / onboarding hero"
+    },
+    "Headline": {
+      "font": "Inter 800",
+      "size": 28,
+      "lineHeight": 36,
+      "use": "Screen hero titles"
+    },
+    "Title L": {
+      "font": "Inter 700",
+      "size": 20,
+      "lineHeight": 28,
+      "use": "App bar, persona names"
+    },
+    "Title M": {
+      "font": "Inter 600",
+      "size": 16,
+      "lineHeight": 24,
+      "use": "Card & section titles, buttons"
+    },
+    "Body L": {
+      "font": "Inter 400",
+      "size": 16,
+      "lineHeight": 24,
+      "use": "Form values, paragraphs"
+    },
+    "Body M": {
+      "font": "Inter 400",
+      "size": 14,
+      "lineHeight": 20,
+      "use": "List rows, menu items"
+    },
+    "Label": {
+      "font": "Inter 600",
+      "size": 12,
+      "lineHeight": 16,
+      "use": "Field labels, chips, eyebrows (caps +6%)"
+    },
+    "Caption": {
+      "font": "Inter 400",
+      "size": 12,
+      "lineHeight": 16,
+      "use": "Helper / timestamps (min size)"
+    }
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "radius": {
+    "xs": 6,
+    "sm": 10,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "pill": 999
+  },
+  "elevation": {
+    "0": "none",
+    "1": "0 1px 2px rgba(10,31,68,.08)",
+    "2": "0 8px 20px rgba(10,31,68,.18)"
+  },
+  "touchTargetMin": 48,
+  "grid": {
+    "mobile": "4 col \u00b7 16 margin \u00b7 16 gutter",
+    "tablet": "8 col \u00b7 24 margin \u00b7 16 gutter",
+    "desktop": "12 col \u00b7 32 margin \u00b7 24 gutter, max 1280"
+  }
+}
