@@ -1,0 +1,9 @@
+respondent,role,shift,current_methods,handover_minutes,missed_info_2wks,pain_points,trust_score_1to5,device,language
+P01,Team Lead,Night,WhatsApp group;Verbal at the dock,18,3,Missed pending loads;Information scattered across chats;No time at shift end,2,Own Android phone,Tamil
+P02,Associate,Night,Verbal at the dock,6,4,Unclear who owns an exception;Language barrier,2,Handheld scanner,Tamil
+P03,Team Lead,Morning,WhatsApp group;Paper register,22,2,Safety issue not passed on;Equipment status unknown;Information scattered across chats,3,Own Android phone,English
+P04,Hub Manager,Rotating,Excel/Google Sheet;WhatsApp group,15,1,Information scattered across chats;Unclear who owns an exception,3,Shared desktop,English
+P05,Associate,Evening,Verbal at the dock;Paper register,8,5,Missed pending loads;Network down at the dock,2,Company Android,Hindi
+P06,Linehaul / Dock supervisor,Night,WhatsApp group,12,3,Missed pending loads;Equipment status unknown;No time at shift end,2,Own Android phone,Tamil
+P07,Team Lead,Evening,WhatsApp group;Verbal at the dock;Paper register,25,2,Safety issue not passed on;Information scattered across chats;No time at shift end,3,Own Android phone,English
+P08,Associate,Morning,Paper register,5,4,Unclear who owns an exception;Missed pending loads;Language barrier,2,Handheld scanner,Tamil
