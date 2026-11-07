@@ -1,0 +1,33 @@
+# Content inventory — ShiftLoop
+
+| ID | Screen | Section | Content / feature | Type | Priority |
+|---|---|---|---|---|---|
+| S01 | Splash | Brand | Logo, product name, tagline, version, offline badge | Content | P2 |
+| S02 | Onboarding | Carousel | 3 value cards: Handover in 5 min · Works offline · Every item owned | Content | P2 |
+| S02 | Onboarding | Actions | Next · Skip | Action | P2 |
+| S03 | Login | Form | Employee ID, Hub, OTP (6 boxes) | Data entry | P1 |
+| S03 | Login | Actions | Sign in · Resend code · Use PIN · Create account | Action | P1 |
+| S04 | Create account | Stepper | Details → Hub & role → Verify | Navigation | P1 |
+| S04 | Create account | Form | Full name, Employee ID, Role, Hub, Usual shift, Mobile, consent | Data entry | P1 |
+| S05 | Home | Shift card | On-shift status, time, hub, crew, docks active, open items, checklist pre-fill % | Data | P1 |
+| S05 | Home | Quick actions | Start handover · Raise issue · Roster | Action | P1 |
+| S05 | Home | List | Items from previous shift with severity chips | Data | P1 |
+| S06 | Dashboard | KPIs | Inbound, Outbound, Pending bags, SLA at risk | Data | P1 |
+| S06 | Dashboard | Charts | Throughput per hour, Dock utilisation | Data | P2 |
+| S07 | Search | Search | Query field, filter chips, grouped results, recent searches | Navigation | P2 |
+| S08 | Handover | Progress | Sections done, time left, saved-offline status | Data | P1 |
+| S08 | Handover | Sections | Shift summary · Pending loads · Exceptions · Safety walk · Equipment · Notes | Data entry | P1 |
+| S08 | Handover | Evidence | Photo capture, voice note, counters | Action | P1 |
+| S08 | Handover | CTA | Review & hand over | Action | P1 |
+| S09 | Summary & sign-off | Summary | Counts by section, critical items list | Data | P1 |
+| S09 | Summary & sign-off | Sign-off | Outgoing / incoming leads, timestamps, acknowledgement ticks | Action | P1 |
+| S10 | Profile | Identity | Avatar, name, role, hub, shift chip, personal KPIs | Data | P2 |
+| S10 | Profile | Menu | My team, My handovers, Certifications, Language, Settings, Log out | Navigation | P2 |
+| S11 | Settings | Toggles | Reminders, Safety alerts, Quiet hours, Large text, High contrast, Voice notes, Offline mode | Action | P2 |
+| S12 | Alerts | List | Grouped by Tonight / Earlier, unread markers, filter chips, Mark all read | Data | P1 |
+| S13 | Help & support | Help | Search articles, popular FAQs, IT desk chat, call manager, report a problem | Content | P3 |
+| Global | Bottom navigation | Nav | Home · Handovers · Dashboard · Alerts (badge) · Profile | Navigation | P1 |
+
+## Navigation labels (tested in card sort)
+
+Home · Handovers · Dashboard · Alerts · Profile — chosen over *Tasks*, *Reports*, *Inbox* because floor staff already use these words in huddles.

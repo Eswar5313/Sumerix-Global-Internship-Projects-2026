@@ -1,0 +1,33 @@
+card,proposed_category,most_chosen,agreement,Home,Handovers,Dashboard,Alerts,Profile & settings,Help
+Shift summary,Handovers,Handovers,100%,0,8,0,0,0,0
+Pending loads,Handovers,Handovers,88%,1,7,0,0,0,0
+Exceptions,Handovers,Handovers,100%,0,8,0,0,0,0
+Safety walk,Handovers,Handovers,100%,0,8,0,0,0,0
+Equipment status,Handovers,Handovers,50%,0,4,1,0,2,1
+Notes for next lead,Handovers,Handovers,88%,0,7,1,0,0,0
+Sign-off,Handovers,Handovers,88%,1,7,0,0,0,0
+Handover history,Handovers,Handovers,88%,0,7,0,1,0,0
+Acknowledge handover,Handovers,Handovers,62%,0,5,1,2,0,0
+Today's shift,Home,Home,100%,8,0,0,0,0,0
+Crew on shift,Home,Home,50%,4,0,0,0,4,0
+Open items,Home,Home,50%,4,4,0,0,0,0
+Start handover,Home,Home,75%,6,2,0,0,0,0
+Raise issue,Home,Home,50%,4,0,0,4,0,0
+Inbound volume,Dashboard,Dashboard,100%,0,0,8,0,0,0
+Outbound volume,Dashboard,Dashboard,100%,0,0,8,0,0,0
+Throughput per hour,Dashboard,Dashboard,100%,0,0,8,0,0,0
+Dock utilisation,Dashboard,Dashboard,75%,0,0,6,1,1,0
+SLA at risk,Dashboard,Dashboard,50%,0,0,4,4,0,0
+Weekly trends,Dashboard,Profile & settings,50%,1,0,3,0,4,0
+Safety alerts,Alerts,Alerts,75%,1,0,0,6,0,1
+Linehaul arrivals,Alerts,Alerts,88%,1,0,0,7,0,0
+Handover reminders,Alerts,Handovers,62%,0,5,0,3,0,0
+Roster published,Alerts,Alerts,62%,3,0,0,5,0,0
+My team,Profile & settings,Profile & settings,100%,0,0,0,0,8,0
+Certifications,Profile & settings,Profile & settings,75%,0,0,2,0,6,0
+Language,Profile & settings,Profile & settings,88%,0,1,0,0,7,0
+Notifications,Profile & settings,Profile & settings,75%,0,0,0,2,6,0
+Offline mode,Profile & settings,Profile & settings,88%,0,1,0,0,7,0
+Log out,Profile & settings,Profile & settings,88%,1,0,0,0,7,0
+FAQ,Help,Help,100%,0,0,0,0,0,8
+Contact IT desk,Help,Help,50%,0,1,0,1,2,4
