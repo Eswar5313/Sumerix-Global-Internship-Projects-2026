@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="@dimen/screen_padding">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/hero_background" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+                android:orientation="horizontal" android:padding="@dimen/space_m">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/total_employees" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceHeadlineSmall" android:textColor="@color/white" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stats_employees"
+                        android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="@color/hero_subtext" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.4" android:orientation="vertical">
+                    <TextView android:id="@+id/total_payroll" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleLarge" android:textColor="@color/gold" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stats_payroll"
+                        android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="@color/hero_subtext" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="vertical">
+                    <TextView android:id="@+id/avg_salary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleLarge" android:textColor="@color/white" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stats_avg"
+                        android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="@color/hero_subtext" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_l"
+            android:text="@string/stats_by_department" android:textAppearance="@style/TextAppearance.App.Eyebrow" />
+        <LinearLayout android:id="@+id/rows" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s" android:orientation="vertical" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

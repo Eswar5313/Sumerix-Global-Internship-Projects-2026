@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="@dimen/screen_padding">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/hero_background" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/space_l">
+                <TextView android:id="@+id/avatar" android:layout_width="@dimen/avatar_large" android:layout_height="@dimen/avatar_large"
+                    android:background="@drawable/bg_avatar_circle" android:gravity="center" android:textColor="@color/white"
+                    android:textSize="32sp" android:textStyle="bold" />
+                <TextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_s" android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:textColor="@color/white" android:textStyle="bold" />
+                <TextView android:id="@+id/designation" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" android:textColor="@color/gold" />
+                <com.google.android.material.chip.Chip android:id="@+id/department_chip" style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_s"
+                    android:clickable="false" android:textColor="@color/white" app:chipBackgroundColor="@color/navy_700"
+                    app:chipStrokeWidth="0dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m">
+            <LinearLayout android:id="@+id/info_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="@dimen/space_s" />
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/button_edit" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_s" android:layout_weight="1"
+                android:text="@string/edit" app:icon="@drawable/ic_edit" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/button_delete"
+                style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/delete" android:textColor="?attr/colorError"
+                app:icon="@drawable/ic_delete" app:iconTint="?attr/colorError" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
