@@ -1,0 +1,17 @@
+ProductID,ProductName,Category,Tier,ListPriceINR,UnitCostINR
+SKU-1001,Smartphone X1,Electronics,Premium,14999,11650
+SKU-1002,Wireless Earbuds,Electronics,Core,1999,1120
+SKU-1003,Smartwatch Fit,Electronics,Core,3499,2280
+SKU-1004,43-inch 4K TV,Electronics,Premium,26999,21900
+SKU-1005,Laptop Ultra 14,Electronics,Premium,52999,44800
+SKU-2001,Air Fryer 4L,Home & Living,Core,5499,3850
+SKU-2002,RO Water Purifier,Home & Living,Premium,11999,8700
+SKU-2003,Cookware Set,Home & Living,Value,2499,1450
+SKU-2004,Ergonomic Office Chair,Home & Living,Core,7999,5200
+SKU-3001,Denim Jacket,Fashion,Core,2999,1350
+SKU-3002,Running Shoes,Fashion,Core,3999,2150
+SKU-3003,Silk Saree,Fashion,Premium,8999,4300
+SKU-3004,Kids Wear Combo,Fashion,Value,1499,690
+SKU-4001,Perfume Oud 100ml,Beauty,Premium,4499,1900
+SKU-4002,Skincare Regimen Kit,Beauty,Core,1899,820
+SKU-4003,Hair Styler,Beauty,Core,2999,1850

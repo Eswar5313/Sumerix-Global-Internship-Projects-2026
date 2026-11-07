@@ -1,0 +1,11 @@
+StoreCode,StoreName,City,Region,Country,Currency
+N01,Connaught Place,New Delhi,India North,India,INR
+N02,Raj Nagar,Ghaziabad,India North,India,INR
+N03,Sector 18,Noida,India North,India,INR
+S01,T. Nagar,Chennai,India South,India,INR
+S02,RS Puram,Coimbatore,India South,India,INR
+S03,Indiranagar,Bengaluru,India South,India,INR
+W01,Bandra West,Mumbai,India West,India,INR
+W02,Koregaon Park,Pune,India West,India,INR
+U01,Al Karama,Dubai,UAE,United Arab Emirates,AED
+U02,Al Nahda,Sharjah,UAE,United Arab Emirates,AED

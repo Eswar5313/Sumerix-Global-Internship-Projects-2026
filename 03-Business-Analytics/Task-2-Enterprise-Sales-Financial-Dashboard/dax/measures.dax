@@ -1,0 +1,78 @@
+// Sumerix Global · Business Analytics Task 2 · Eswar Mahalingam
+// DAX measures for the Power Pivot / Power BI model (star schema: tblFactSales + DimCalendar, DimStore, DimProduct, DimCustomer; tblBudget joined virtually).
+// Mark DimCalendar as the date table (Design ▸ Mark as Date Table ▸ Date) before using the time-intelligence measures.
+// Home table for all measures: tblFactSales. Format: currency measures '₹ #,##0', % measures '0.0%'.
+
+// Net revenue after discount (INR)
+[Total Revenue] :=
+    SUM ( tblFactSales[NetRevenue] )
+
+// Qty × unit cost
+[Total COGS] :=
+    SUM ( tblFactSales[COGS] )
+
+// Revenue − COGS
+[Gross Profit] :=
+    [Total Revenue] - [Total COGS]
+
+// Gross profit ÷ revenue
+[Gross Margin %] :=
+    DIVIDE ( [Gross Profit], [Total Revenue] )
+
+// Distinct order lines
+[Orders] :=
+    DISTINCTCOUNT ( tblFactSales[OrderID] )
+
+// Revenue per order
+[Average Order Value] :=
+    DIVIDE ( [Total Revenue], [Orders] )
+
+// Distinct buying customers
+[Active Customers] :=
+    DISTINCTCOUNT ( tblFactSales[CustomerID] )
+
+// Same period last year (needs marked date table)
+[Revenue LY] :=
+    CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( DimCalendar[Date] ) )
+
+// Growth vs same period last year
+[Revenue YoY %] :=
+    DIVIDE ( [Total Revenue] - [Revenue LY], [Revenue LY] )
+
+// Calendar year-to-date
+[Revenue YTD] :=
+    TOTALYTD ( [Total Revenue], DimCalendar[Date] )
+
+// Budget at the current month × region grain (virtual relationship via TREATAS)
+[Budget] :=
+    CALCULATE ( SUM ( tblBudget[BudgetINR] ), TREATAS ( SUMMARIZE ( DimCalendar, DimCalendar[Year], DimCalendar[MonthNo] ), tblBudget[Year], tblBudget[MonthNo] ), TREATAS ( VALUES ( DimStore[Region] ), tblBudget[Region] ) )
+
+// Actual − budget
+[Budget Variance] :=
+    [Total Revenue] - [Budget]
+
+// Variance ÷ budget
+[Budget Variance %] :=
+    DIVIDE ( [Budget Variance], [Budget] )
+
+// Monthly fixed opex assumption (Financial_Model)
+[Fixed Opex] :=
+    SUMX ( VALUES ( DimCalendar[MonthStart] ), SWITCH ( YEAR ( DimCalendar[MonthStart] ), 2024, 240000, 2025, 260000, 0 ) )
+
+// Gross profit − 9% variable opex − fixed opex
+[Net Profit (pre-tax)] :=
+    [Gross Profit] - [Total Revenue] * 0.09 - [Fixed Opex]
+
+// ---- supporting measures (not in the workbook's Data_Model sheet)
+
+// Net profit ÷ revenue
+[Net Margin %] :=
+    DIVIDE ( [Net Profit (pre-tax)], [Total Revenue] )
+
+// Trailing three-month revenue
+[Revenue Rolling 3M] :=
+    CALCULATE ( [Total Revenue], DATESINPERIOD ( DimCalendar[Date], MAX ( DimCalendar[Date] ), -3, MONTH ) )
+
+// Rank of the region by revenue
+[Region Rank] :=
+    RANKX ( ALL ( DimStore[Region] ), [Total Revenue] )
