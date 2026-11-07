@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment android:id="@+id/dashboardFragment" android:name="com.eswar.employeedirectory.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard">
+        <action android:id="@+id/action_dashboard_to_detail" app:destination="@id/employeeDetailFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/employeeListFragment" android:name="com.eswar.employeedirectory.ui.list.EmployeeListFragment"
+        android:label="@string/nav_employees">
+        <argument android:name="departmentName" app:argType="string" android:defaultValue="" />
+        <action android:id="@+id/action_list_to_detail" app:destination="@id/employeeDetailFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/employeeDetailFragment" android:name="com.eswar.employeedirectory.ui.detail.EmployeeDetailFragment"
+        android:label="@string/title_detail">
+        <argument android:name="employeeId" app:argType="integer" />
+    </fragment>
+
+    <fragment android:id="@+id/departmentsFragment" android:name="com.eswar.employeedirectory.ui.departments.DepartmentsFragment"
+        android:label="@string/nav_departments">
+        <action android:id="@+id/action_departments_to_list" app:destination="@id/employeeListFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/companyFragment" android:name="com.eswar.employeedirectory.ui.company.CompanyFragment"
+        android:label="@string/nav_company" />
+
+    <fragment android:id="@+id/contactFragment" android:name="com.eswar.employeedirectory.ui.contact.ContactFragment"
+        android:label="@string/nav_contact" />
+</navigation>

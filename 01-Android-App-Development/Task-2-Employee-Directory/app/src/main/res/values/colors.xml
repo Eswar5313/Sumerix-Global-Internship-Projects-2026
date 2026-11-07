@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#0A1F44</color>
+    <color name="navy_700">#1E3A6E</color>
+    <color name="gold">#C9A227</color>
+    <color name="white">#FFFFFF</color>
+    <color name="brand_primary">#0A1F44</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary_container">#DCE4F5</color>
+    <color name="brand_on_primary_container">#0A1F44</color>
+    <color name="brand_secondary">#8A6D0B</color>
+    <color name="brand_on_secondary">#FFFFFF</color>
+    <color name="brand_secondary_container">#F6EBC2</color>
+    <color name="brand_on_secondary_container">#2E2300</color>
+    <color name="brand_background">#F6F7F9</color>
+    <color name="brand_surface">#FFFFFF</color>
+    <color name="brand_surface_variant">#EEF1F6</color>
+    <color name="brand_on_surface">#14181F</color>
+    <color name="brand_on_surface_variant">#4A5263</color>
+    <color name="brand_outline">#D5DAE3</color>
+    <color name="brand_error">#B42318</color>
+    <color name="hero_background">#0A1F44</color>
+    <color name="hero_text">#FFFFFF</color>
+    <color name="hero_subtext">#C8D2E6</color>
+    <color name="dept_operations">#0A1F44</color>
+    <color name="dept_technology">#0E7490</color>
+    <color name="dept_finance">#1B7F4B</color>
+    <color name="dept_hr">#6D28D9</color>
+    <color name="dept_sales">#C2410C</color>
+    <color name="dept_customer">#8A6D0B</color>
+</resources>

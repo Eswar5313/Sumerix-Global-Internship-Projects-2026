@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Employee Directory</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_employees">Employees</string>
+    <string name="nav_departments">Departments</string>
+    <string name="nav_company">Company</string>
+    <string name="nav_contact">Contact</string>
+    <string name="title_detail">Employee</string>
+
+    <string name="company_name">NorthStar Logistics Pvt. Ltd.</string>
+    <string name="company_disclaimer">Fictional company · dummy employee data for Task 2</string>
+    <string name="dashboard_greeting">Good morning 👋</string>
+    <string name="stat_employees">Employees</string>
+    <string name="stat_departments">Departments</string>
+    <string name="stat_tenure">Avg tenure (yrs)</string>
+    <string name="stat_locations">Cities</string>
+    <string name="team_statistics">Team statistics</string>
+    <string name="new_joiners">Newest joiners</string>
+    <string name="view_all">View all employees</string>
+
+    <string name="search_hint">Search name, role, city or skill</string>
+    <string name="filter_all">All</string>
+    <string name="empty_state">No employees match your search.</string>
+    <string name="scroll_top">Scroll to top</string>
+    <string name="employee_meta">%1$s · %2$s</string>
+    <string name="manager">Manager</string>
+    <string name="add_favourite">Add to favourites</string>
+    <string name="remove_favourite">Remove from favourites</string>
+    <string name="favourite_added">%1$s added to favourites</string>
+    <string name="favourite_removed">%1$s removed from favourites</string>
+    <string name="undo">Undo</string>
+    <plurals name="people_count">
+        <item quantity="one">%d person</item>
+        <item quantity="other">%d people</item>
+    </plurals>
+    <plurals name="results_count">
+        <item quantity="one">%d employee</item>
+        <item quantity="other">%d employees</item>
+    </plurals>
+
+    <string name="employee_not_found">Employee not found</string>
+    <string name="label_employee_id">Employee ID</string>
+    <string name="label_email">Email</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_location">Location</string>
+    <string name="label_joined">Joined</string>
+    <string name="joined_format">%1$s · %2$.1f yrs</string>
+    <string name="skills">Skills</string>
+    <string name="action_call">Call</string>
+    <string name="action_email">Email</string>
+    <string name="action_message">Message</string>
+    <string name="dialog_contact_title">Contact %1$s?</string>
+    <string name="dialog_contact_message">Send an email to %1$s (%2$s)?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="department_head">Head: %1$s</string>
+    <string name="departments_intro">Tap a department to see its people.</string>
+
+    <string name="company_about_title">About us</string>
+    <string name="company_about">NorthStar Logistics runs gateway hubs, last-mile delivery and warehousing for e-commerce brands across India. This app is a training project — the company and every employee in it are fictional.</string>
+    <string name="company_mission_title">Mission</string>
+    <string name="company_mission">Move every parcel on time, every time — with safe hubs and well-led teams.</string>
+    <string name="company_facts">%1$d employees · %2$d departments · %3$d cities</string>
+    <string name="company_offices_title">Offices &amp; hubs</string>
+    <string name="company_values_title">Values</string>
+    <string name="company_values">Safety first · Own the shift · Measure what matters · Customers feel the result</string>
+
+    <string name="contact_title">Contact HR</string>
+    <string name="contact_intro">Questions about the directory or a profile? Send a note to the People team.</string>
+    <string name="hint_name">Your name</string>
+    <string name="hint_email">Work email</string>
+    <string name="hint_department">Department</string>
+    <string name="hint_message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="error_required">Required</string>
+    <string name="error_email">Enter a valid email</string>
+    <string name="error_department">Choose a department</string>
+    <string name="error_message">At least 10 characters</string>
+    <string name="fix_errors">Please fix the highlighted fields</string>
+    <string name="dialog_sent_title">Request sent</string>
+    <string name="dialog_sent_message">Thanks %1$s — the %2$s team will reply within one working day.</string>
+</resources>

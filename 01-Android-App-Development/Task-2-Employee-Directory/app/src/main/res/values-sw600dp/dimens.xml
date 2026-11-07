@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">32dp</dimen>
+    <integer name="list_span">2</integer>
+    <integer name="department_span">3</integer>
+</resources>

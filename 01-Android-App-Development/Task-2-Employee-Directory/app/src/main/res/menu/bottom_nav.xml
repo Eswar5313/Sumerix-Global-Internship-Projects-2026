@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Item ids match the destination ids in nav_graph.xml so NavigationUI can wire them. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dashboardFragment" android:icon="@drawable/ic_dashboard" android:title="@string/nav_dashboard" />
+    <item android:id="@+id/employeeListFragment" android:icon="@drawable/ic_people" android:title="@string/nav_employees" />
+    <item android:id="@+id/departmentsFragment" android:icon="@drawable/ic_apartment" android:title="@string/nav_departments" />
+    <item android:id="@+id/companyFragment" android:icon="@drawable/ic_info" android:title="@string/nav_company" />
+    <item android:id="@+id/contactFragment" android:icon="@drawable/ic_mail" android:title="@string/nav_contact" />
+</menu>
